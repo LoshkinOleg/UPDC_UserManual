@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.18)  18 DEC 2019 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.18)  19 DEC 2019 16:51
 entering extended mode
 **./UPDC_UserManual.tex
 (UPDC_UserManual.tex
@@ -267,77 +267,86 @@ File: ./images/mainMenu.png Graphic file (type png)
 <use ./images/mainMenu.png>
 Package pdftex.def Info: ./images/mainMenu.png  used on input line 20.
 (pdftex.def)             Requested size: 496.85503pt x 181.42737pt.
-<./images/folderUPDC.png, id=3, 1307.88625pt x 581.17125pt>
-File: ./images/folderUPDC.png Graphic file (type png)
-<use ./images/folderUPDC.png>
-Package pdftex.def Info: ./images/folderUPDC.png  used on input line 25.
-(pdftex.def)             Requested size: 555.85428pt x 246.99895pt.
+<./images/dataFolder.png, id=3, 188.20313pt x 154.32657pt>
+File: ./images/dataFolder.png Graphic file (type png)
+<use ./images/dataFolder.png>
+Package pdftex.def Info: ./images/dataFolder.png  used on input line 25.
+(pdftex.def)             Requested size: 188.20265pt x 154.32617pt.
 
-Overfull \hbox (30.6164pt too wide) in paragraph at lines 25--26
- [] 
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+
  []
 
 <./images/exportUi.png, id=4, 1137.24875pt x 824.07875pt>
 File: ./images/exportUi.png Graphic file (type png)
 <use ./images/exportUi.png>
-Package pdftex.def Info: ./images/exportUi.png  used on input line 30.
+Package pdftex.def Info: ./images/exportUi.png  used on input line 32.
 (pdftex.def)             Requested size: 625.48875pt x 453.2447pt.
 
-Overfull \hbox (100.25087pt too wide) in paragraph at lines 30--31
+Overfull \hbox (100.25087pt too wide) in paragraph at lines 32--33
  [] 
  []
 
 [1
 
 {C:/Users/admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/ma
-inMenu.png> <./images/folderUPDC.png>] [2 <./images/exportUi.png>]
-<./images/soExample.png, id=20, 349.305pt x 82.80937pt>
-File: ./images/soExample.png Graphic file (type png)
-<use ./images/soExample.png>
-Package pdftex.def Info: ./images/soExample.png  used on input line 42.
-(pdftex.def)             Requested size: 349.30414pt x 82.80916pt.
-<./images/typesUi.png, id=21, 897.3525pt x 788.9475pt>
+inMenu.png> <./images/dataFolder.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+
+ []
+
+[2 <./images/exportUi.png>]
+<./images/typesUi.png, id=20, 897.3525pt x 788.9475pt>
 File: ./images/typesUi.png Graphic file (type png)
 <use ./images/typesUi.png>
-Package pdftex.def Info: ./images/typesUi.png  used on input line 49.
+Package pdftex.def Info: ./images/typesUi.png  used on input line 42.
 (pdftex.def)             Requested size: 493.5454pt x 433.92245pt.
- [3 <./images/soExample.png> <./images/typesUi.png>]
-<./images/EmptyFieldsUI.png, id=27, 903.375pt x 337.26pt>
-File: ./images/EmptyFieldsUI.png Graphic file (type png)
-<use ./images/EmptyFieldsUI.png>
-Package pdftex.def Info: ./images/EmptyFieldsUI.png  used on input line 61.
-(pdftex.def)             Requested size: 542.02919pt x 202.35756pt.
 
-Overfull \hbox (16.7913pt too wide) in paragraph at lines 61--62
- [] 
+Underfull \hbox (badness 10000) in paragraph at lines 44--49
+
  []
 
-<./images/cleaningJson.png, id=28, 536.0025pt x 111.41624pt>
+[3 <./images/typesUi.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+<./images/emptyDefinition.png, id=25, 304.88907pt x 192.72pt>
+File: ./images/emptyDefinition.png Graphic file (type png)
+<use ./images/emptyDefinition.png>
+Package pdftex.def Info: ./images/emptyDefinition.png  used on input line 55.
+(pdftex.def)             Requested size: 228.66623pt x 144.53963pt.
+<./images/cleaningJson.png, id=26, 536.0025pt x 111.41624pt>
 File: ./images/cleaningJson.png Graphic file (type png)
 <use ./images/cleaningJson.png>
-Package pdftex.def Info: ./images/cleaningJson.png  used on input line 65.
+Package pdftex.def Info: ./images/cleaningJson.png  used on input line 59.
 (pdftex.def)             Requested size: 536.00119pt x 111.41597pt.
 
-Overfull \hbox (10.7633pt too wide) in paragraph at lines 65--66
+Overfull \hbox (10.7633pt too wide) in paragraph at lines 59--60
  [] 
  []
 
-[4 <./images/EmptyFieldsUI.png> <./images/cleaningJson.png>]
-(UPDC_UserManual.aux) ) 
+<./images/soExample.png, id=27, 349.305pt x 82.80937pt>
+File: ./images/soExample.png Graphic file (type png)
+<use ./images/soExample.png>
+Package pdftex.def Info: ./images/soExample.png  used on input line 66.
+(pdftex.def)             Requested size: 349.30414pt x 82.80916pt.
+[4 <./images/emptyDefinition.png> <./images/cleaningJson.png> <./images/soExamp
+le.png>] (UPDC_UserManual.aux) ) 
 Here is how much of TeX's memory you used:
  3162 strings out of 492452
- 42100 string characters out of 3129807
+ 42114 string characters out of 3129807
  112897 words of memory out of 3000000
  7480 multiletter control sequences out of 15000+200000
  9804 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,6n,34p,380b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on UPDC_UserManual.pdf (4 pages, 330971 bytes).
+ 46i,6n,34p,361b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on UPDC_UserManual.pdf (4 pages, 240452 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

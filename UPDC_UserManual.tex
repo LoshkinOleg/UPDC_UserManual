@@ -22,18 +22,42 @@ The \textbf{Unity to PokEngine Data Converter, or UPDC for short}, is a Unity to
 
 \section{Folder Hierarchy}
 \begin{center}
-\includegraphics[scale=0.425]{folderUPDC}
+\includegraphics[scale=1.0]{dataFolder}
 \end{center}
+\textbf{UPDC generates folders for every convertible type that are defined for it in the "Types" tab}. These \textbf{folders must contain} the corresponding type of \textbf{.asset files for the tool to be able to export them}.\\\\
+The \textbf{folders} located \textbf{in "Assets/Data"} with a name corresponding to a convertible type \textbf{are folders containing assets that are not linked to any particular scene}. Other \textbf{folders} are \textbf{named after scenes and inside are folders for convertible assets that are linked to that scene}.
 
 \section{The Exporter Tab}
 \begin{center}
 \includegraphics[scale=0.55]{exportUi}
 \end{center}
-The tool is separated between \textbf{two tabs}. In the \textbf{Exporter tab}, you can \textbf{select the .asset files located in the Assets/Data/...} folders \textbf{you wish to export}.
-You can \textbf{select the output directory} for the files generated. By default, the tool outputs the files into Assets/Editor/UPDC/DefaultOutputDir you have previously defined.
-Upon exportation, \textbf{directories will be generated in the output directory} to mirror the structure seen in Assets/Data.\\
+The tool is separated between \textbf{three tabs}. In the \textbf{Exporter tab}, you can \textbf{select the .asset files located in the Assets/Data/...} folders \textbf{you wish to export}.
+You can \textbf{select the output directory} for the files generated. By default, the tool outputs the files into Assets/Editor/UPDC/DefaultOutputDir.\\\\
+Upon exportation, \textbf{directories will be generated in the output directory} to mirror the structure seen in Assets/Data.
 Finally, you can choose whether to \textbf{overwrite any existing files} or not.
 \newpage
+
+\section{The Types Tab}
+\begin{center}
+\includegraphics[scale=0.55]{typesUi}
+\end{center}
+The \textbf{Types tab} contains a list of \textbf{tuples that define a type's name and it's corresponding extension}.
+The type's name is used for generating appropriately named folders and to identify the asset's type. The extension is appended to the generated JSON's name for the PokEngine's parser to identify the asset's type.\\\\
+\textbf{To integrate your newly created class} with UPDC, simply \textbf{enter it's name and it's extension} in the "New entry" fields and press the \textbf{"Add new type" button}.
+A \textbf{folder for your new .asset files will be automatically generated} in Assets/Data and the files will be visible in the "Export" tab.\\
+To \textbf{remove a type}, simply \textbf{select it} in the list and press the \textbf{"Remove selected" button}.
+\newpage
+
+\section{The Empty Fields Tab}
+Unity's \textbf{JSONUtility} used for exporting ScriptableObjects \textbf{fills any uninitialized fields} of a ScriptableObject \textbf{with default empty values}. This adds a lot of \textbf{useless contents in the output JSON file}. \textbf{UPDC allows you to define substrings to remove from the final JSON file}.\\\\
+Add there the definitions of what uninitialized fields of your component look like if you wish them removed from the final result.
+\begin{center}
+\includegraphics[scale=0.75]{emptyDefinition}
+\end{center}
+This results in a JSON file containing only the initialized values like so:
+\begin{center}
+\includegraphics[scale=1.0]{cleaningJson}
+\end{center}
 
 \section{Integrating with UPDC}
 \textbf{UPDC converts .asset files} of types \textbf{inheriting from the ScriptableObject} class.\\
@@ -41,28 +65,7 @@ If you wish to export your data using UPDC, you will therefore need to \textbf{c
 \begin{center}
 \includegraphics[scale=1.0]{soExample}
 \end{center}
-\textbf{Instances of your ScriptableObject inheriting class will need to be stored in Asssets/Data/yourTypeFolder} for UPDC to manage them. \textbf{This must be done on your side} as UPDC does not provide any automatic way to put your .asset files into their corresponding folders.
-Next, you will need to \textbf{define your new class with UPDC} via the "Types" tab.
-
-\section{The Types Tab}
-\begin{center}
-\includegraphics[scale=0.55]{typesUi}
-\end{center}
-The \textbf{Types tab} contains a list of \textbf{tuples that define a type's name and it's corresponding extension}.
-The type's name is used for generating appropriately named folders and the extension is appended to the JSONs generated for your custom class to be used by the PokEngine's parser to identify the asset's type.
-\textbf{To integrate your newly created class} with UPDC, simply \textbf{enter it's name and it's extension} in the "New entry" fields and press the \textbf{"Add new type" button}.
-A \textbf{folder for your new .asset files will be automatically generated} in Assets/Data and the files will be visible in the "Export" tab.\\
-To \textbf{remove a type}, simply \textbf{select it} in the list and press the \textbf{"Remove selected" button}.
-
-\section{The Empty Fields Tab}
-Unity's \textbf{JSONUtility} used for exporting ScriptableObjects \textbf{fills any uninitialized fields} of a ScriptableObject \textbf{with default empty values}. This adds a lot of \textbf{useless contents in the output JSON file}. \textbf{UPDC therefore removes those} empty fields before writing the final version of the JSON to disk.\\
-The \textbf{tool does however need to know what an empty field looks like}. If you don't want your JSON file to contain empty fields, \textbf{add a new definition of the string to be removed} from the resulting JSON like so:
-\begin{center}
-\includegraphics[scale=0.6]{EmptyFieldsUI}
-\end{center}
-This results in a JSON file containing only the initialized values like so:
-\begin{center}
-\includegraphics[scale=1.0]{cleaningJson}
-\end{center}
+\textbf{Instances of your ScriptableObject inheriting class will need to be stored in Asssets/Data/yourTypeFolder or Assets/Data/someScene/yourTypeFolder} for UPDC to manage them. \textbf{This must be done on your side} as UPDC does not provide any automatic way to put your .asset files into their corresponding folders.
+Next, you will need to \textbf{define your new class with UPDC} via the "Types" tab and \textbf{add any empty fields you wish to remove in the "Empty Fields" tab}.
 
 \end{document}
